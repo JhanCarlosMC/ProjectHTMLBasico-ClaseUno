@@ -13,10 +13,63 @@
 
 <body>
 
-    <div>
-        <!-- Explicacion etiquetas -->
-        <h1 id="Inicio">Titulo Principal</h1>
-        <p>Parrafo del titulo principal</p>
+    <div id="formulario">
+        <h2>Formulario</h2>
+
+        <form action="" method="post">
+            <label for="usuario">Usuario</label><br>
+            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+
+            <br><br>
+            <label for="pass">Contraseña *</label><br>
+            <input type="password" id="pass" required>
+
+            <br><br>
+            <label for="email">Correo</label><br>
+            <input type="email" id="email" value="ejemplo@gmail.com" readonly>
+
+            <br><br>
+            <label for="edad">Edad</label><br>
+            <input type="number" name="edad" id="edad">
+
+            <br>
+            <label for="">Seleccione sus lenguajes mas utilizados</label>
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="">Html</label>
+
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="">CSS</label>
+
+            <br>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <label for="">JS</label>
+
+            <br><br>
+            <label for="">Seleccione su lenguaje favorito</label>
+            <br>
+            <input type="radio" name="radio" id="radio">
+            <label for="">Html</label>
+
+            <input type="radio" name="radio" id="radio">
+            <label for="">CSS</label>
+
+            <input type="radio" name="radio" id="radio">
+            <label for="">JS</label>
+
+            <br><br>
+            <input type="reset" id="limpiar" value="limpiar">
+            <input type="submit" id="enviar" value="Enviar">
+
+            <br><br>
+            <label for="description">Descripcion</label>
+            <textarea name="description" id="description" cols="20" rows="5"></textarea>
+
+            <br><br>
+            <label for=""></label>
+
+        </form>
 
     </div>
 
@@ -37,7 +90,9 @@
             <tbody>
                 <tr>
                     <td><a href="https://es.wikipedia.org/wiki/Wikipedia:Portada">Wikipedia</a></td>
-                    <td><center><img src="/imagenes/Etiquetas.png" alt="imagen ejemplo" width="200px"></center></td>
+                    <td>
+                        <center><img src="/imagenes/Etiquetas.png" alt="imagen ejemplo" width="200px"></center>
+                    </td>
                     <td>Text 3</td>
                     <td>Text 4</td>
                 </tr>
@@ -52,7 +107,9 @@
 
             <tfoot>
                 <tr>
-                    <td colspan="4"><center>footer1</center></td>
+                    <td colspan="4">
+                        <center>footer1</center>
+                    </td>
                 </tr>
             </tfoot>
         </table>
@@ -60,12 +117,12 @@
         <hr>
     </div>
 
-    <div> 
+    <div>
         <h2>Titulo Secundario</h2>
         <p>Parrafo del titulo principal. <br> Hola </p>
         <p>Parrafo del titulo principal</p>
     </div>
-    
+
     <h3>Titulo Tres</h3>
     <p>Ejemplo <b>negrita</b> </p>
     <p>Ejemplo <strong>importante</strong> </p>
@@ -116,7 +173,7 @@
     <br><br>
     <img src="imagenes/Etiquetas.png" alt="imagen de ejemplo" width="100%">
 
-    
+
     <table border="1">
         <tr>
             <th>Encabezado 1</th>
