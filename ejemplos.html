@@ -16,58 +16,70 @@
     <div id="formulario">
         <h2>Formulario</h2>
 
-        <form action="" method="post">
-            <label for="usuario">Usuario</label><br>
-            <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+        <form action="">
+            <fieldset>
+                <legend>Informacion Personal</legend>
 
-            <br><br>
-            <label for="pass">Contraseña *</label><br>
-            <input type="password" id="pass" required>
+                <label for="usuario">Usuario</label><br>
+                <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" maxlength="5">
 
-            <br><br>
-            <label for="email">Correo</label><br>
-            <input type="email" id="email" value="ejemplo@gmail.com" readonly>
+                <br><br>
+                <label for="pass">Contraseña *</label><br>
+                <input type="password" id="pass" name="pass" required maxlength="5">
 
-            <br><br>
-            <label for="edad">Edad</label><br>
-            <input type="number" name="edad" id="edad">
+                <br><br>
+                <label for="email">Correo</label><br>
+                <input type="email" id="email" name="email" value="ejemplo@gmail.com" readonly>
 
+                <br><br>
+                <label for="edad">Edad</label><br>
+                <input type="number" name="edad" id="edad" max="100" min="0">
+            </fieldset>
+            
             <br>
-            <label for="">Seleccione sus lenguajes mas utilizados</label>
-            <br>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="">Html</label>
+            <fieldset>
+                <legend>Campos Seleccionables</legend>
+                <label for="">Seleccione sus lenguajes mas utilizados</label>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="">Html</label>
 
-            <br>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="">CSS</label>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="">CSS</label>
 
-            <br>
-            <input type="checkbox" name="checkbox" id="checkbox">
-            <label for="">JS</label>
+                <br>
+                <input type="checkbox" name="checkbox" id="checkbox">
+                <label for="">JS</label>
 
+                <br><br>
+                <label for="">Seleccione su lenguaje favorito</label>
+                <br>
+                <input type="radio" name="radio" id="radio">
+                <label for="">Html</label>
+
+                <input type="radio" name="radio" id="radio">
+                <label for="">CSS</label>
+
+                <input type="radio" name="radio" id="radio">
+                <label for="">JS</label>
+            </fieldset>
             <br><br>
-            <label for="">Seleccione su lenguaje favorito</label>
-            <br>
-            <input type="radio" name="radio" id="radio">
-            <label for="">Html</label>
-
-            <input type="radio" name="radio" id="radio">
-            <label for="">CSS</label>
-
-            <input type="radio" name="radio" id="radio">
-            <label for="">JS</label>
-
-            <br><br>
-            <input type="reset" id="limpiar" value="limpiar">
+            <input type="reset" id="limpiar" value="Limpiar">
             <input type="submit" id="enviar" value="Enviar">
 
             <br><br>
             <label for="description">Descripcion</label>
-            <textarea name="description" id="description" cols="20" rows="5"></textarea>
+            <textarea name="description" id="description" cols="20" rows="5" placeholder="Ingrese el texto"></textarea>
 
             <br><br>
-            <label for=""></label>
+            <label for="">Menu Desplegable o Lista de Elementos</label>
+            <br><select name="list_lenguajes" id="list_lenguajes" size="4" multiple>
+                <option value="opt_java">Java</option>
+                <option value="opt_js">JS</option>
+                <option value="opt_py">Python</option>
+                <option value="opt_php">Php</option>
+            </select>
 
         </form>
 
