@@ -1,0 +1,23 @@
+/* Selector de tipo: Id*/
+#formulario {
+    color: aqua;
+}
+
+#colorPage{
+    background-color: chocolate;
+}
+
+/* Selector de tipo: Class*/
+.headers {
+    color: red;
+}
+
+/* Selector de tipo: Elemento - Etiqueta*/
+h2 {
+    color: blue;
+}
+
+/* Selector de tipo: Universal*/
+* {
+    color: fuchsia;
+}

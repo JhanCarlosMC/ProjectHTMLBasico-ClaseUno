@@ -9,18 +9,21 @@
     <meta name="keywords" content="HTML, ejemplo, sitio web, frontend">
 
     <title>Proyecto HTML TEST</title>
+
+    <link rel="stylesheet" href="style/styles.css">
+
 </head>
 
-<body>
+<body id="colorPage">
 
-    <div id="formulario">
-        <h2>Formulario</h2>
+    <div>
+        <h2 id="formulario" class="headers">Formulario</h2>
 
         <form action="">
             <fieldset>
                 <legend>Informacion Personal</legend>
 
-                <label for="usuario">Usuario</label><br>
+                <label for="usuario" id="label_user">Usuario</label><br>
                 <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" maxlength="5">
 
                 <br><br>
@@ -93,10 +96,10 @@
             <caption>Tabla Ejemplo</caption>
             <thead>
                 <tr>
-                    <th>Encabezado 1</th>
-                    <th>Encabezado 2</th>
-                    <th>Encabezado 3</th>
-                    <th>Encabezado 4</th>
+                    <th class="headers">Encabezado 1</th>
+                    <th >Encabezado 2</th>
+                    <th class="headers">Encabezado 3</th>
+                    <th class="headers">Encabezado 4</th>
                 </tr>
             </thead>
             <tbody>
