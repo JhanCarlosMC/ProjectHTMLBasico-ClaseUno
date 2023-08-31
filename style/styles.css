@@ -1,23 +1,59 @@
 /* Selector de tipo: Id*/
 #formulario {
-    color: aqua;
+    color: hsl(59, 91%, 47%);
+    font-size: 40px;
+    border: 0.25em solid green;
 }
 
 #colorPage{
-    background-color: chocolate;
+    background-color: rgba(128, 128, 128, 0.521);
+}
+
+div h2{
+    color: blueviolet;
+}
+
+.inicial .headers{
+    background-color: blue;
 }
 
 /* Selector de tipo: Class*/
 .headers {
-    color: red;
+    color: rgb(200, 100, 50);
+}
+
+.table{
+    width: 70vw;
 }
 
 /* Selector de tipo: Elemento - Etiqueta*/
 h2 {
-    color: blue;
+    color: #4ea2c4;
+}
+
+label{
+    color: red;
+}
+
+input[type="email"]{
+    color: black;
+}
+
+legend.infoPersonal{
+    color: blueviolet;
 }
 
 /* Selector de tipo: Universal*/
 * {
-    color: fuchsia;
+    color: rgb(0, 0, 0);
+}
+
+/**/
+.ejemplo{
+    height: 60px;
+    border-left: 2px solid rgb(255, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
