@@ -1,0 +1,65 @@
+div{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.contenedor{
+    width: 400px;
+    height: 500px;
+    padding: 10px;
+    border: 2px solid black;
+    position: relative;
+}
+
+.static{
+    background-color: yellow;
+
+}
+
+.relative{
+    background-color: aqua;
+
+    position: relative;
+    left: 30px;
+    top: 20px;
+}
+
+.absolute{
+    background-color: blueviolet;
+
+    position: absolute;
+    left: 80px;
+    bottom: 10px;
+}
+
+.fixed{
+    background-color: gray;
+
+    position: fixed;
+
+    bottom: 10px;
+    right: 10px;
+}
+
+.sticky{
+    background-color: coral;
+
+    position: sticky;
+    top: 10px;
+    left: 10px;
+}
+
+
+.orden{
+    width: 70%;
+    height: 200px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-Limit{
+    width: 50%;
+}

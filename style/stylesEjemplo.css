@@ -57,3 +57,11 @@ legend.infoPersonal{
     border-radius: 5px;
     box-sizing: border-box;
 }
+
+#enlace_block{
+    display: block;
+}
+
+body{
+    margin: 5px 5px 10px 20px;
+}
