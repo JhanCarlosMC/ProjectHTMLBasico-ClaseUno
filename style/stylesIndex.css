@@ -1,7 +1,8 @@
 @import 'banner.css';
 @import 'navigation.css';
+@import 'footer.css';
 
 /*Generales*/
-body{
+body {
     margin: 10px 0px;
 }

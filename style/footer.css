@@ -1,0 +1,34 @@
+.footer{
+    background-color: rgb(40, 40, 40);
+    color: #fff;
+    padding: 10px 0px 0px 0px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-redes{
+    margin: 10px;
+}
+
+.footer-redes__link{
+    display: inline-block;
+    margin: 10px;
+}
+
+.footer-logo__img{
+    width: 80px;
+}
+
+.footer-redes__img{
+    width: 35px;
+}
+
+.footer-derechos{
+    text-align: center;
+    background-color: rgb(54, 54, 54);
+    padding: 10px 0px;
+}
