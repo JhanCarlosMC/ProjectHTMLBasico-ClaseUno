@@ -1,5 +1,5 @@
 /*Navegacion*/
-.header{
+.header {
     background-color: rgb(40, 40, 40);
     color: #fff;
     text-align: center;
@@ -9,18 +9,18 @@
     top: 0px;
 }
 
-.menu__list{
+.menu__list {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
 }
 
-.menu__item{
+.menu__item {
     text-decoration: none;
     padding: 10px 20px;
 }
 
-.menu__link{
+.menu__link {
     color: #fff;
     text-decoration: none;
     padding: 5px 20px;
@@ -31,21 +31,31 @@
 }
 
 @media screen and (max-width: 480px) {
-    .header{
-        padding: 0px;
-    
-        position: static;
-    }
-    
-    .menu__list{
+    .menu__list {
         flex-direction: column;
         padding: 0px;
         margin: 0px;
+        background-color: rgb(40, 40, 40);
+        position: absolute;
+        right: 0px;
     }
-    
-    .menu__item{
-        border-bottom: 1px solid #bbb;
 
+    .menu-mobile__line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px auto;
     }
-    
+
+    .menu__item {
+        border-bottom: 1px solid #bbb;
+    }
+
+    .menu-mobile:hover + .menu__list{
+        display: block;
+     }
+ 
+     .menu__list:not(:hover){
+         display: none;
+     }
 }
