@@ -243,10 +243,10 @@ function ejemploObjetos() {
 }
 
 // ejemploClase();
-function ejemploClase(){
+function ejemploClase() {
 
     class Estudiante {
-        constructor(nombre, edad, estatura, peso, id){
+        constructor(nombre, edad, estatura, peso, id) {
             this.nombre = nombre;
             this.edad = edad;
             this.estatura = estatura;
@@ -262,8 +262,66 @@ function ejemploClase(){
     //console.log(Object.values(estudianteUno));
 
     for (const i in estudianteUno) {
-        console.log(i +": "+estudianteUno[i]);
+        console.log(i + ": " + estudianteUno[i]);
     }
 }
 
 //-----------------Funciones
+
+//Funcion sin retorno y sin parametros
+//ejemploFuncionBasica(); //Llamado
+
+function ejemploFuncionBasica() {
+    console.log("Funcion sin retorno y sin parametros");
+}
+
+//Funcion sin retorno y con parametros
+const valorUno = 20
+
+//ejemploFuncionParametros(valorUno, 15); //Llamado
+
+function ejemploFuncionParametros(numeroUno, numeroDos) {
+    console.log(numeroUno + numeroDos);
+}
+
+//Funcion con Retorno
+
+//let retorno = ejemploFuncionRetorno("David"); //Llamado
+//console.log(retorno);
+
+function ejemploFuncionRetorno(nombre) {
+    let mensaje = "";
+
+    if (nombre === "Jhan") {
+        mensaje = "Los nombres son iguales";
+    } else {
+        mensaje = "Los nombres NO son iguales";
+    }
+
+    return mensaje;
+}
+
+//-----------------Funciones en Flecha
+
+//Sin parametros
+const saludo = () => console.log("Hola");
+saludo();
+
+//Con parametros
+const saludoPersonalizado = (nombre) => console.log("Hola " + nombre);
+saludoPersonalizado("Jhan");
+
+//Con mas codigo
+const cicloEjemplo = a => {
+    for (let i = 0; i < a; i++) {
+        console.log(i);
+    }
+};
+//cicloEjemplo(4);
+
+//Con Retorno
+const multiplicacion = (a, b) => a*b;
+
+let result = multiplicacion(2,5)
+
+console.log(result);
