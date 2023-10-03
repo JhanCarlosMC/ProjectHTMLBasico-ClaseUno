@@ -126,3 +126,144 @@ function numDescendentesFor(numero) {
         console.log("For " + i);
     }
 }
+
+//-----------------Arreglos
+//arreglos();
+function arreglos() {
+    let edades = [19, 22, 15, 30];
+    let logicos = [true, false, true, true, false];
+    let listadoEstudiantes = [];
+
+    // for(let i = 0; i< edades.length; i++){
+    //     console.log("Indice "+ i + ": " + edades[i]);
+    //     console.log(`Elemento ${i}: ${edades[i]}`);
+    // }
+
+    edades.forEach((element, index) => {
+        console.log(`Elemento ${index}: ${element}`);
+    });
+}
+
+//operacionesArrays();
+
+function operacionesArrays() {
+    let semana = ["Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+
+    semana.push("Domingo");
+
+    semana.push("Lunes");
+
+    semana.pop();
+
+    semana.unshift("Lunes");
+
+    semana.unshift("Juernes");
+
+    semana.shift();
+
+    console.log(semana.indexOf("Domingo"));
+
+    semana.forEach(element => {
+        console.log(element);
+    });
+}
+
+//sumaArreglos();
+function sumaArreglos() {
+    let arregloUno = [2, 13, 24, 42, 3];
+    let arregloDos = [5, 1, 64, 3];
+    let arregloResultado = [];
+
+    if (arregloDos.length === arregloUno.length) {
+        for (let i = 0; i < arregloDos.length; i++) {
+
+            arregloResultado.push(arregloUno[i] + arregloDos[i]);
+
+        }
+    } else {
+
+        if (arregloDos.length < arregloUno.length) {
+            for (let i = 0; i < arregloDos.length; i++) {
+
+                arregloResultado.push(arregloUno[i] + arregloDos[i]);
+                console.log("Uno");
+
+            }
+        } else {
+            for (let i = 0; i < arregloUno.length; i++) {
+
+                arregloResultado.push(arregloUno[i] + arregloDos[i]);
+                console.log("Dos");
+
+            }
+        }
+    }
+
+    arregloResultado.forEach(element => {
+        console.log(element);
+    });
+}
+
+// ejemploMatriz();
+function ejemploMatriz() {
+    let matrizUno = [
+        [1, 2, 3], [4, 5, 6]
+    ];
+    let cadena = "";
+    // console.log(matrizUno[1][2]);
+
+    for (let i = 0; i < matrizUno.length; i++) {
+        for (let j = 0; j < matrizUno[0].length; j++) {
+
+            cadena = cadena + matrizUno[i][j] + " ";
+            console.log("i=" + i + " j=" + j + " Elemento=" + matrizUno[i][j]);
+
+        }
+        console.log(cadena);
+        cadena = "";
+    }
+}
+
+//-----------------Objetos
+
+//ejemploObjetos();
+function ejemploObjetos() {
+
+    let personaUno = {
+        nombre: "Jhan",
+        edad: 22,
+        ciudad: "Armenia",
+        pais: "Colombia",
+        gafas: true,
+    };
+
+    personaUno.altura = 182;
+
+    console.log(personaUno);
+}
+
+// ejemploClase();
+function ejemploClase(){
+
+    class Estudiante {
+        constructor(nombre, edad, estatura, peso, id){
+            this.nombre = nombre;
+            this.edad = edad;
+            this.estatura = estatura;
+            this.peso = peso;
+            this.id = id;
+        }
+    }
+
+    let estudianteUno = new Estudiante();
+
+    //console.log(Object.keys(estudianteUno));
+
+    //console.log(Object.values(estudianteUno));
+
+    for (const i in estudianteUno) {
+        console.log(i +": "+estudianteUno[i]);
+    }
+}
+
+//-----------------Funciones
