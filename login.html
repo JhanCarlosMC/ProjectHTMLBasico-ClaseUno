@@ -9,7 +9,7 @@
 
 <body>
     
-    <form action="">
+    <form id="login">
         <fieldset>
             <legend>Inicio de Sesion</legend>
 
@@ -17,22 +17,17 @@
             <label for="id_usuario"> Usuario*: </label>
 
             <!-- input: Ingreso de informacion -->
-            <input type="text" name="data_usuario" id="id_usuario" placeholder="Ingrese su usuario" required>
+            <input type="text" name="id_usuario" id="id_usuario" placeholder="Ingrese su usuario" required>
 
             <br>
             <label for="id_password"> Contraseña*: </label>
             <input type="password" name="data_password" id="id_password" placeholder="Ingrese su contraseña" required>
-
-            <br>
-            <label for="id_email"> Correo*: </label>
-            <input type="email" name="data_email" id="id_email" placeholder="Ingrese su correo" required>
-
             <br><br>
-            <a href="index.html">
-                <input type="button" name="data_button" id="id_button" value="Enter">
-            </a>
+                <input type="submit" value="Enviar">
         </fieldset>
     </form>
 
+    <button onclick="redireccion()">Home</button>
+    <script src="js/login.js"></script>
 </body>
 </html>

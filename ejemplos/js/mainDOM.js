@@ -56,6 +56,14 @@ function eliminarStyle() {
 const imagenDelete = document.querySelector("img");
 imagenDelete.remove();
 
+
+//-------------------------Eventos-------------
+const parrafoEvent = document.getElementById("parrafoOculo");
+parrafoEvent.addEventListener("dblclick", () => {
+    parrafoEvent.style.color = "green";
+    console.log("click activado");
+});
+
 header.addEventListener("mouseover", mouseEventsOver);
 
 function mouseEventsOver(){
@@ -68,5 +76,28 @@ header.addEventListener("mouseout", mouseEventsOut);
 
 function mouseEventsOut(){
     header.style.backgroundColor = "red";
-    header.style.border = "1px solid black";
+
+}
+
+//----------Eventos formularios----------
+const formularioLogin = document.getElementById("login");
+
+formularioLogin.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const user = document.getElementById("user").value;
+
+    parrafoEvent.innerHTML = " Bienvenido "+ user;
+    localStorage.setItem("usuario", user);
+
+    // window.location.href = '/index.html'
+
+    formularioLogin.reset();
+});
+
+
+function recuperarDatos(){
+    const nombreUsuario = localStorage.getItem("usuario");
+
+    console.log("Dato recuperado: "+ nombreUsuario);
 }
