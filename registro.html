@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+<body>
+
+    <form id="registro">
+        <fieldset>
+            <legend>Registro</legend>
+
+            <label for="name">Nombre: </label>
+            <input type="text" name="name" id="name"><br>
+
+            <label for="apellidos">Apellidos: </label>
+            <input type="text" name="apellidos" id="apellidos"><br>
+
+            <label for="email">Correo: </label>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="pass">Contraseña: </label>
+            <input type="password" name="pass" id="pass"><br>
+
+            <label for="genero">Genero: </label>
+            <input type="text" name="genero" id="genero"><br>
+
+            <br><br>
+            <input type="submit" value="Registrarse">
+        </fieldset>
+    </form>
+    
+    <button onclick="mostrarUsuarios()">Mostrar usuarios</button>
+    <script src="js/registro.js"></script>
+</body>
+</html>
